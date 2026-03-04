@@ -55,12 +55,7 @@ docker compose up --build
 ```
 `http://localhost:5173`
 
-### 3) Access services
-
-- Frontend: `http://localhost:5173`
-- Backend health: `http://localhost:5001/api/health`
-- PostgreSQL: `localhost:5433`
-
+ 
 
 # Author 
 Victor Adams
