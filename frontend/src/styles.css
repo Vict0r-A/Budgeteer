@@ -1,0 +1,193 @@
+:root {
+  --bg: #0f172a;
+  --panel: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --brand: #38bdf8;
+  --brand-bg: rgba(56, 189, 248, 0.2);
+  --brand-border: rgba(56, 189, 248, 0.35);
+  --danger: #fda4af;
+  --danger-border: rgba(251, 113, 133, 0.35);
+  --edit: #bfdbfe;
+  --edit-border: rgba(147, 197, 253, 0.35);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.budget-page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.page-title {
+  font-size: clamp(1.75rem, 3vw, 2rem);
+  font-weight: 600;
+}
+
+.page-subtitle {
+  color: var(--muted);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  border-radius: 1rem;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.text-muted-custom {
+  color: var(--muted) !important;
+}
+
+.text-link {
+  color: var(--muted);
+  text-decoration: underline;
+}
+
+.text-link:hover {
+  color: var(--brand);
+}
+
+.field-control {
+  background: var(--slate-800);
+  border: 1px solid var(--slate-700);
+  color: var(--text);
+  border-radius: 0.75rem;
+}
+
+.field-control:focus {
+  background: var(--slate-800);
+  color: var(--text);
+  border-color: var(--brand);
+  box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.2);
+}
+
+.field-control::placeholder {
+  color: #cbd5e1;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--slate-700);
+  background: var(--slate-800);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.btn-brand {
+  border-radius: 0.75rem;
+  border: 1px solid var(--brand-border);
+  color: var(--brand);
+  background: var(--brand-bg);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  color: #7dd3fc;
+  background: rgba(56, 189, 248, 0.3);
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+.btn-slate {
+  border-radius: 0.75rem;
+  border: 1px solid var(--slate-700);
+  color: var(--text);
+  background: var(--slate-800);
+}
+
+.btn-slate:hover,
+.btn-slate:focus {
+  color: var(--text);
+  background: #273449;
+  border-color: #3f4f67;
+}
+
+.table-budget {
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--text);
+  --bs-table-border-color: rgba(51, 65, 85, 0.6);
+  margin: 0;
+}
+
+.table-budget thead th {
+  background: rgba(30, 41, 59, 0.6);
+  color: #cbd5e1;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.7);
+  font-weight: 500;
+  padding: 0.85rem 1rem;
+}
+
+.table-budget td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+.table-budget tbody tr:hover td {
+  background: rgba(30, 41, 59, 0.35);
+}
+
+.border-slate {
+  border-color: rgba(51, 65, 85, 0.7) !important;
+}
+
+.btn-delete {
+  color: var(--danger);
+  border: 1px solid var(--danger-border);
+  background: transparent;
+  border-radius: 0.6rem;
+}
+
+.btn-delete:hover,
+.btn-delete:focus {
+  color: #fecdd3;
+  background: rgba(251, 113, 133, 0.12);
+  border-color: rgba(251, 113, 133, 0.55);
+}
+
+.btn-edit {
+  color: var(--edit);
+  border: 1px solid var(--edit-border);
+  background: transparent;
+  border-radius: 0.6rem;
+}
+
+.btn-edit:hover,
+.btn-edit:focus {
+  color: #dbeafe;
+  background: rgba(147, 197, 253, 0.12);
+  border-color: rgba(147, 197, 253, 0.55);
+}
+
+.modal-budget {
+  background: #0b1220;
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  color: var(--text);
+}
+
+.chart-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.chart-placeholder {
+  min-height: 140px;
+  border: 1px dashed rgba(148, 163, 184, 0.5);
+  border-radius: 0.75rem;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
