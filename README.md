@@ -8,6 +8,11 @@ This is a responsive, full-stack personal expense tracker for managing day-to-da
 
 # Live Demo
 Live application: [http://18.135.98.106/](http://18.135.98.106/)
+<img width="1440" height="812" alt="budgeteer-1" src="https://github.com/user-attachments/assets/782b8d05-8c04-40d5-98e7-9da0b9b0c61f" />
+<img width="1440" height="808" alt="budgeteer-2" src="https://github.com/user-attachments/assets/b2013ba5-8bd3-4408-a67a-dd744aac417b" />
+
+
+
 # App in action
 
 ## Features
